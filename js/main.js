@@ -55,16 +55,24 @@ function getHeight() {
     return height;
 }
 
-let param = [parseInt(getWidth())/2 - 25, parseFloat(getHeight())/2 - 50]
+window.addEventListener('resize', getNewParam)
+
+function getNewParam () {
+    let param = [parseInt(getWidth())/2 - 25, parseFloat(getHeight())/2 - 50]
+    getHeight(), getWidth()
+    return param
+}
+
+
 
 function animateBlocks () {
     anime ({
         targets: '.block',
         translateX: function () {
-            return anime.random((-1)*param[0], param[0])
+            return anime.random((-1)*getNewParam()[0], getNewParam()[0])
         },
         translateY: function () {
-            return anime.random(-1*param[1], param[1])
+            return anime.random(-1*getNewParam()[1], getNewParam()[1])
         },
         scale: function () {
             return anime.random(1,1.5)
