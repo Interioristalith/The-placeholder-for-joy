@@ -87,3 +87,48 @@ body {
   /* grid-template-rows: auto; */
   gap: 20px 20px;
 }
+
+.anime-js {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+justify-content: center;
+align-items: center;
+background: rgba(215,194,165,255);
+}
+
+.container {
+  position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+
+
+.anime-js h2 {
+  color: rgba(57,36,16,255);
+  text-align: center;
+  font-size: 12vh;
+  line-height: 0.6em;
+  z-index: 1000;
+  font-weight: 900;
+
+}
+
+.anime-js h2 span {
+  font-size: 0.2em;
+  letter-spacing: 0.4em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.block {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  background: rgba(243,220,183,255);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2)
+}
