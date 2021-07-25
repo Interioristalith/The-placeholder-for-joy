@@ -15,7 +15,7 @@
     "postcss": "^8.3.6"
   },
   "scripts": {
-    "build": "parcel build index.html"
+    
   },
   "repository": {
     "type": "git",
