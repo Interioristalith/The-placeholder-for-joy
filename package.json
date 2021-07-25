@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "animejs": "^3.2.1",
-    "parcel": "^1.12.5"
+    "animejs": "^3.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
