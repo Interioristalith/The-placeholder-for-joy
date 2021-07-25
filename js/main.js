@@ -1,8 +1,7 @@
 // Microscroll of background while scrolling the webpage
 
 // const { easings } = require("animejs")
-
-
+import anime from 'animejs/lib/anime.es.js';
 // Expanding the side panel
 
 function expandPanel () {
