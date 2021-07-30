@@ -1,6 +1,6 @@
 // Microscroll of background while scrolling the webpage
 
-
+import anime from '../js/anime.es'
 // Expanding the side panel
 
 function expandPanel () {
