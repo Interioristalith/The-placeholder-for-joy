@@ -1,23 +1,8 @@
 // Microscroll of background while scrolling the webpage
 
-import anime from '../js/anime.es'
-// Expanding the side panel
+// import anime from '../js/anime.es'
+// import {expandPanel} from './expandPanel'
 
-function expandPanel () {
-    const leftPanel = document.getElementById('left-panel')
-    leftPanel.addEventListener('mouseenter', slideRight)
-
-    leftPanel.addEventListener('mouseleave', slideBack)
-
-    function slideRight () {
-        leftPanel.classList.toggle('left-panel__expanded')
-    }
-
-    function slideBack () {
-        leftPanel.classList.toggle('left-panel__expanded')
-    }
-}
-expandPanel();
 
 
 // Temporary scrolling down

@@ -33,7 +33,6 @@ body {
   inset: 0% 93% 0% 0%;
   max-width: 400px;
   mix-blend-mode: color-dodge;
-  mix-blend-mode: hard-light;
   opacity: 0.8;
   position: absolute;
   transition: inset 0.3s;
@@ -51,7 +50,6 @@ body {
   position: relative;
 }
 
-/* Nav-bar */
 
 /* First-section */
 .first-section-background::before {
@@ -131,4 +129,18 @@ overflow: hidden;
   height: 100px;
   background: rgba(243,220,183,255);
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2)
+}
+
+/* Nav Bar */
+
+.nav-bar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar__divs {
+
 }
