@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calc.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="inViewPort">
+        <section class="degree-converter">
+                           
+            <header class="title"> <span area-hidden='true'>percents</span>percents<span area-hidden='true'>percents</span>
+            </header>
+
+            <div class="inverter">
+                <h2>From Percents to Degrees</h2>
+                <label for="input-percents">Enter inaccuracy in percents.</label>
+                <input class="input--converter" type="number" autofocus placeholder="0.200 %" id="input-percents" onchange="toDegree()"  max="100">
+                <p id="result">Degree:</p>
+            </div>
+            <button class="neon-btn">Stop animation</button>
+        </section>
+        <section class="degree-converter">
+            <header class="title"> <span area-hidden='true'>degrees</span>degrees<span area-hidden='true'>degrees</span></header>
+        
+            <div class="inverter">
+                <h2>From degree to percents</h2>
+                <label for="input-degree">Enter degree.</label>
+                <input class="input--converter" type="text" placeholder="Degree: 0&#176; 59' 27&#8220; " id="input-degree" onchange="toPercent()"  max="100">
+                <p id="result-percents">Percents:</p>
+            </div>
+        
+              <div class="body-surrogate">
+                  <div class="good-thing">
+                      <div class="floor"></div>
+                      <div class="cube">
+                          <div class="top">
+                              <div class="ballShadow"></div>
+                        </div>
+                          <div class="bottom"></div>
+                          <div class="back"></div>
+                          <div class="front"></div>
+                          <div class="left"></div>
+                          <div class="right"></div>
+                      </div>
+                      <div class="ball"></div>
+                  </div>
+              </div>
+        
+        </section>
+    </div>
+    <div class="outtaViewPort">
+        <!-- <div class="labels"> -->
+            <input  type="radio" id="green" name="color">
+            <label for="green">green</label>
+            <input type="radio" id="blue" name="color">
+            <label for="blue">blue</label>
+            <input type="radio" id="yellow" name="color">
+            <label for="yellow">yellow</label>
+            <input type="radio" id="purple" name="color">
+            <label for="purple">purple</label>
+            <input type="radio" id="red" name="color">
+            <label for="red">red</label>
+            <input type="radio" id="black" name="color">
+            <label for="black">black</label>
+        <!-- </div> -->
+
+        <div class="lightsaber">
+            <input type="checkbox" id="on-off">
+            <div class="blade"></div>
+            <label for="on-off" class="hilt"></label>
+        </div>
+    </div>
+    <h2>Me Amure</h2>
+    <div>
+        <ul id="fazerList">
+            <li><a href="">one</a></li>
+            <li><a href="">two</a></li>
+            <li><a href="">three</a></li>
+        </ul>
+    </div>
+    
+    <div class="checking-username" id="stupid-alloy">
+        <div class="inverter" id="stupid-alloy__inverter">
+            <h2>Check your indentity</h2>
+            <label for="input-degree">Enter your name.</label>
+            <input class="input--converter" type="text" placeholder="Bill Fucking Gates" id="userName" max="100">
+            <p id="afterload"></p>
+            <p id="feedBack"></p>
+        </div>
+        <!-- <div class="ads">I'm invincible</div> -->
+    </div>
+
+    
+    
+        
+    <div>
+                <h2 class="mouse-events">Mouse Events</h2>
+                <div class="grid-6x2">
+                    <h2 class="boxygen">screenX</h2>
+                    <h2 class="boxygen">screenY</h2>
+                    <h2 class="boxygen">pageX</h2>
+                    <h2 class="boxygen">pageY</h2>
+                    <h2 class="boxygen">clientX</h2>
+                    <h2 class="boxygen">clientY</h2>
+                    <section class="boxy" id="sx"></section>
+                    <section class="boxy" id="sy"></section>
+                    <section class="boxy" id="px"></section>
+                    <section class="boxy" id="py"></section>
+                    <section class="boxy" id="cx"></section>
+                    <section class="boxy" id="cy"></section>
+                </div>
+              
+                <div class="grid-6x2">
+                    <h2 class="boxygen">dblclick</h2>
+                    <h2 class="boxygen">mousedown</h2>
+                    <h2 class="boxygen">mouseup</h2>
+                    <h2 class="boxygen">mouseover</h2>
+                    <h2 class="boxygen">mouseout</h2>
+                    <h2 class="boxygen">mousemove</h2>
+                    <div class="event mouseEve"></div>
+                    <div class="event mouseEve"></div>
+                    <div class="event mouseEve"></div>
+                    <div class="event mouseEve"></div>
+                    <div class="event mouseEve"></div>
+                    <div class="event mouseEve"></div>
+                </div>
+                <h2 class="keyboard-events">Keyboard Events</h2>
+                <div class="grid-4x3">
+                    <h2 class="boxygen">input</h2>
+                    <h2 class="boxygen">keydown</h2>
+                    <h2 class="boxygen">keypress</h2>
+                    <h2 class="boxygen">keyup</h2>
+                   
+                    <input class="input" type="text">
+                    <input class="input" type="text">
+                    <input class="input" type="text">
+                    <input class="input" type="text">
+                    
+                    <div class="event keyEve"></div>
+                    <div class="event keyEve"></div>
+                    <div class="event keyEve"></div>
+                    <div class="event keyEve"></div>
+                    
+                </div>
+                <div class="longKey grid-2x3">
+                  
+                    <h2 class="boxygen">ASCII</h2>
+                    <h2 class="boxygen">keyboard code</h2>
+
+                    <input class="input" type="text">
+                    <input class="input" type="text">
+
+                    <div class="event keyEve"></div>
+                    <div class="event keyEve"></div>
+                </div>
+                <h2 class="form-events">Form Events</h2>
+                    
+                <form class="grid-3x1 form" id="thisFucker" action="#" method="GET">
+                        <div class="inside-form-divs--mod" id="agreement">
+                            <div class="inside-form-divs">
+                                    <label for="submit--event-form">Name</label>
+                                    <input type="text" id="submit--event-form">
+                                    <label for="password">Password</label>
+                                    <input type="text" id="password">
+                                    <input type="checkbox" id="important-checkbox">
+                                    <label for="important-checkbox">Important checkbox</label>
+                                    <button type="submit">Submit</button>
+                                </div>
+                                
+                                    <p id="last-element-for-checkbox"></p>
+                        </div>
+
+                        
+                        <div class="inside-form-divs--mod">
+                            <div class="inside-form-divs">
+                                    <label for="input--event-form">Input</label>
+                                    <input type="text" id="input--event-form">
+                            </div>
+                            <p id="input--event-form__paragraph"></p>
+                        </div>
+                        
+                        
+                        <div class="inside-form-divs--mod"> 
+                            <div class="inside-form-divs">
+                                <label for="change--event-form">Change</label>
+                                <input type="text" id="change--event-form">
+                            </div>
+                            <p id="change--event-form__paragraph"></p>
+                        </div>
+
+                        
+                </form>
+           
+            
+            <!-- <label class="boxy" for="sx">screenX</label> -->
+    </div>
+    
+    <div class="changeListeners">
+        <h2>Change Listeners</h2>
+        <div class="grid-2x2">
+            <section class="first-table-wrapper">
+                <table id="DOMNodeInserted">
+                    <thead>
+                        <tr>
+                            <th  colspan="2" id="sirius-black-ground">The table of "DOMNodeInserted"</th>
+                        </tr>
+                        <tr>
+                            <th  colspan="2" id="total-count">The count of elements is: </th>
+                        </tr>
+                    </thead>
+                    <tbody id="DOMNodeInserted__body" class="DOMNodeInserted__body">
+                        <tr>
+                            <td>Fire</td>
+                            <td id="fire-count">3</td>
+                        </tr>
+                        <tr>
+                            <td>Earth</td>
+                            <td id="earth-count">17</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td id="water-count">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="second-table-wrapper">
+                <table id="DOMNodeRemoved">
+                    <thead>
+                        <tr>
+                            <th  colspan="2" class="suby-title">The table of "DOMNodeRemoved"</th>
+                        </tr>
+                        <tr>
+                            <th  colspan="2" id="total-count-removed">The count of elements is: </th>
+                        </tr>
+                    </thead>
+                    <tbody id="DOMNodeRemoved__body">
+                        <tr>
+                            <td>Fire</td>
+                            <td class="countee">3</td>
+                        </tr>
+                        <tr>
+                            <td>Earth</td>
+                            <td class="countee">17</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td class="countee">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="btn__change-listeners">
+                <button id="add-ether" class="neon-btn change-listeners">Add</button>
+            </div>
+            <div class="btn__change-listeners">
+                <button id="remove-ether" class="neon-btn change-listeners">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div id="html5-events">
+        <h2>HTML5 Events</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <td>DOMContentLoaded</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fucks</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <td>hashchange</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fucks</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./results.html">Anchor</a></td>
+                    </tr>
+                    <tr>
+                        <td><button id="hash-changer"></button>  Change the hash</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="beforeunload-table">
+                <thead>
+                    <tr>
+                        <td>beforeunloud</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="beforeunloadInfo">Type in something and reload the page</td>
+                    </tr>
+                    <tr>
+                        <td><form  action=""><input type="text" id="willy-billy"></form></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+        <table id="urls-old-and-new">
+            <thead></thead>
+           <tbody>
+                <tr>
+                    <td class="url url-title">Old url</td>
+                    <td class="url url-data">Fucks</td>
+                </tr>
+                <tr>
+                    <td class="url url-title">New url</td>
+                    <td class="url url-data">Fucks</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="jquery-lib-hero"><h2>jQuery</h2></div>
+
+    <div id="newAdventure">
+        <h2>jQuery Selectors</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Something</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>*</td>
+                    <td>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </td>
+                </tr>
+                <tr>
+                    <td>first</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>last</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>even</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>odd</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>eq(0) // depricated</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>gt(0) // depricated</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>lt(4) // depricated</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.slice(4)</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.slice(2)</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.slice(-2)</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.slice(1,4)</td>
+                    <td>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="ready">
+        <div id="blackening">
+            <h2>Method "Ready"</h2>
+            <p id="DOMContentLoaded-paragraph"></p>
+            <p id="load-paragraph"></p>
+            <p id="on-jquery-paragraph"></p>
+            <p ></p>
+        </div>
+    </div>
+    
+
+</body>
+<script src="jquery-3.6.0.js"></script>
+<script src="Calc.js"></script>
+</html>
